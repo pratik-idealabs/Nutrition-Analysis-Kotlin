@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutrition Analysis"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Captured Image (Initially hidden) -->
+    <ImageView
+        android:id="@+id/capturedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Captured Image" />
+
+    <!-- API Response TextView (Initially hidden) -->
+    <TextView
+        android:id="@+id/visionApiResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/capturedImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp" />
+
+    <!-- Capture Image Button -->
+    <Button
+        android:id="@+id/captureImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture Image"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/onPrimary"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:elevation="6dp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/visionApiResponse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- View Records Button -->
+    <Button
+        android:id="@+id/viewRecordsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Records"
+        android:background="@drawable/rounded_button_secondary"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:elevation="6dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

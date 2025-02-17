@@ -1,0 +1,24 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#6200EE</color> <!-- Purple -->
+    <color name="primaryVariant">#3700B3</color>
+    <color name="onPrimary">#FFFFFF</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#03DAC6</color>
+    <color name="onSecondary">#000000</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#FFFFFF</color>  <!-- White -->
+    <color name="onBackground">#000000</color>  <!-- Black -->
+    <color name="surface">#F5F5F5</color>  <!-- Light Gray -->
+    <color name="onSurface">#000000</color>  <!-- Black -->
+
+    <!-- Additional Fixes -->
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorBackground">#FFFFFF</color>  <!-- Fix the error -->
+    <color name="colorOnBackground">#000000</color>
+</resources>

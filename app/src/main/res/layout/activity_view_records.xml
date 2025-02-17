@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <TextView
+        android:id="@+id/recordsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Records"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- RecyclerView to display records -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recordsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/recordsTitle"
+        android:layout_above="@id/clearRecordsButton"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
+
+    <!-- Clear Records Button -->
+    <Button
+        android:id="@+id/clearRecordsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear All Records"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5252"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+</RelativeLayout>
